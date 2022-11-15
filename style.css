@@ -1,0 +1,240 @@
+/*
+font-family: 'Open Sans', sans-serif; */
+/**
+ * Mobile
+ */
+
+/** General */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/** Body */
+body {
+    
+background-color: #FFF;
+    color: white;
+}
+
+/** Header */
+header {
+    background: rgb(255,109,7);
+background: linear-gradient(90deg, rgba(255,109,7,1) 0%, rgba(249,123,59,1) 45%, rgba(255,0,119,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+/** Encabezados */
+h1,
+h2 {
+    
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: crimson;
+}
+
+/** Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4em 2em;
+    background-color: #FFF;
+}
+
+
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+    width: 100%;
+}
+
+
+main button {
+    margin: 8px;
+    border: 5px;
+    border-radius: 15px;
+    padding: 12px;
+    background: rgb(255,109,7);
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+
+
+.contenedor_disco{
+    background-color: rgba(255, 110, 7, 0.658);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor_disco h1, .contenedor_disco h2{
+    font-size: 2em;
+    color: rgb(82, 10, 24);
+
+} 
+
+
+.contenedor_disco ul{
+    margin-top: 4px;
+}
+
+.contenedor_disco .duracion{
+    font-size: 1.6em;
+    font-style: italic;
+    color: black;
+   
+}
+.colorrojo{
+    color: red;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.detalles{
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 8px;
+    margin: 10px 6px;
+}
+
+h4{
+    font-size: 1.5em;
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+
+.detalles span{
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    
+}
+
+#duracion{
+    background-color:  rgba(255, 110, 7, 0.521);
+    color: crimson;
+    font-size: 1.4em;
+    font-weight: 600;
+    width: 280px;
+    padding: 15px;
+}
+
+.contenedor_disco .imagen{
+    width: 60px;
+    height: 60px;
+    background-image: url(vinilo.png);
+    background-size: 100% 100%;
+    background-color: transparent;
+    margin: auto;
+}
+
+/** Footer */
+footer {
+    background: rgb(255,109,7);
+background: linear-gradient(90deg, rgba(255,109,7,1) 0%, rgba(249,123,59,1) 45%, rgba(255,0,119,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #D0E0E3;
+}
+
+footer ul li a:hover {
+    color: #a2c4c9;
+}
+
+/** Overs */
+main button:hover {
+    outline: 2.5px solid crimson;
+    background-color: white;
+    color: rgb(255, 110, 7) ;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+}
+
+button:focus{
+    outline: none;
+}
+
+/**
+ * Web
+ */
+@media screen and (min-width: 960px) {
+
+
+    /** Footer */
+    footer ul {
+        flex-direction: row;
+    }
+
+}
